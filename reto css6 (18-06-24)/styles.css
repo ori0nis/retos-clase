@@ -1,0 +1,20 @@
+body {
+  font-size: 45px;
+}
+
+div {
+  position: relative;
+}
+
+p {
+  z-index: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  visibility: hidden;
+  background-color: brown;
+  font-size: 20px;
+}
