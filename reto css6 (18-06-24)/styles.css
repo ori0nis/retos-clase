@@ -1,21 +1,29 @@
 body {
-  font-size: 45px;
-}
-
-div {
-  position: relative;
-}
-
-p {
-  z-index: 1;
+  font-size: 35px;
 }
 
 .tooltip {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
   position: absolute;
-  top: 5;
-  left: -5;
-  z-index: 2;
   visibility: hidden;
-  background-color: brown;
   font-size: 20px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
 }
