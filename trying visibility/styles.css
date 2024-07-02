@@ -1,0 +1,48 @@
+.div1 {
+  background-color: blue;
+  width: 350px;
+  height: 250px;
+}
+.div2 {
+  background-color: red;
+  width: 350px;
+  height: 250px;
+}
+.div3 {
+  background-color: green;
+  width: 350px;
+  height: 250px;
+}
+.div4 {
+  display: none;
+}
+
+.div4 > img {
+  max-width: 550px;
+  max-height: 300px;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* To play with invisible items and media queries, can do visibility: hidden and then visibility: visible or display: none and then display: any value other than none */
+
+@media screen and (max-width: 700px) {
+  .div4 {
+    display: block;
+  }
+
+  .div1 {
+    flex-grow: 3;
+  }
+
+  .div2 {
+    flex-grow: 2;
+  }
+
+  .div3 {
+    flex-grow: 1;
+  }
+}
